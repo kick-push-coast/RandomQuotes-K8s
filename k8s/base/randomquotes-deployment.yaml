@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: randomquotes-web
-          image: octopussamples/randomquotes-k8s:0.1.32
+          image: mktyler01/randomquotes-k8s:#{Octopus.Action.Package.PackageVersion}
           resources:
             requests:
               memory: "64Mi"
@@ -52,7 +52,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: randomquotes.local
+    - host: #{Hostname}
       http:
         paths:
           - path: /
