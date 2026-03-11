@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: randomquotes-web
-          image: mktyler01/randomquotes-k8s:#{Octopus.Action.Package.PackageVersion}
+          image: mktyler01/randomquotes-k8s:latest
           resources:
             requests:
               memory: "64Mi"
