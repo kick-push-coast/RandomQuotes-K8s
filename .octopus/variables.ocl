@@ -1,0 +1,17 @@
+variable "Hostname" {
+    value "dev.randomquotes.34.60.24.186.nip.io" {
+        environment = ["development"]
+    }
+
+    value "test.randomquotes.34.60.24.186.nip.io" {
+        environment = ["test"]
+    }
+
+    value "staging.randomquotes.34.60.24.186.nip.io" {
+        environment = ["staging"]
+    }
+
+    value "randomquotes.34.60.24.186.nip.io" {
+        environment = ["production"]
+    }
+}
